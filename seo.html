@@ -163,7 +163,8 @@
           <a href="#products" class="transition hover:text-rose-700">TOP5 精選</a>
           <a href="#summary" class="transition hover:text-rose-700">送禮總結</a>
         </div>
-        <a href="#products" class="rounded-full bg-stone-800 px-4 py-2 text-sm font-semibold text-white transition hover:bg-stone-700">立即選禮</a>
+        <!-- 加入了 id="btn-nav-cta" 與 data 屬性 -->
+        <a id="btn-nav-cta" href="#products" class="rounded-full bg-stone-800 px-4 py-2 text-sm font-semibold text-white transition hover:bg-stone-700" data-event="click_product" data-product="導覽列_立即選禮">立即選禮</a>
       </nav>
     </header>
 
@@ -179,15 +180,21 @@
               精選女友最喜歡的 TOP10 生日禮物，客製化禮物實用又有心意。不踩雷、保證感動的完美選擇！
             </p>
             <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <!-- 加入了 id="btn-hero-primary" 與 data 屬性 -->
               <a
+                id="btn-hero-primary"
                 href="#products"
                 class="btn-cta rounded-full bg-gradient-to-r from-rose-600 to-rose-500 px-6 py-3 text-center text-sm font-semibold text-white transition"
+                data-event="click_product" data-product="首圖區_立即挑選"
               >
                 立即挑選 TOP5 生日禮物
               </a>
+              <!-- 加入了 id="btn-hero-secondary" 與 data 屬性 -->
               <a
+                id="btn-hero-secondary"
                 href="#principles"
                 class="rounded-full border border-stone-300 bg-white/70 px-6 py-3 text-center text-sm font-semibold text-stone-700 transition hover:border-rose-300 hover:text-rose-700"
+                data-event="click_product" data-product="首圖區_查看原則"
               >
                 查看挑選原則
               </a>
@@ -273,7 +280,8 @@
                 <li>✔ 紀念價值高</li>
                 <li>✔ 適合各種交往階段</li>
               </ul>
-              <a href="https://www.pinkoi.com/search?q=%E5%AE%A2%E8%A3%BD%E9%A3%BE%E5%93%81" target="_blank" rel="noopener noreferrer" class="btn-cta mt-6 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-rose-600 to-rose-500 px-5 py-3 text-sm font-semibold text-white" data-event="click_product" data-product="客製化飾品">前往 Pinkoi 客製飾品</a>
+              <!-- 加入了 id="btn-product-1-jewelry" -->
+              <a id="btn-product-1-jewelry" href="https://www.pinkoi.com/search?q=%E5%AE%A2%E8%A3%BD%E9%A3%BE%E5%93%81" target="_blank" rel="noopener noreferrer" class="btn-cta mt-6 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-rose-600 to-rose-500 px-5 py-3 text-sm font-semibold text-white" data-event="click_product" data-product="客製化飾品">前往 Pinkoi 客製飾品</a>
             </div>
           </article>
 
@@ -292,7 +300,8 @@
                 <li>✔ 可以持續使用</li>
                 <li>✔ 情緒價值高</li>
               </ul>
-              <a href="https://24h.pchome.com.tw/search/?q=%E7%9B%B8%E7%89%87%E5%8D%B0%E8%A1%A8%E6%A9%9F" target="_blank" rel="noopener noreferrer" class="btn-cta mt-6 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-amber-500 to-orange-500 px-5 py-3 text-sm font-semibold text-white" data-event="click_product" data-product="相片印表機">前往 PCHOME 看相片印表機</a>
+              <!-- 加入了 id="btn-product-2-printer" -->
+              <a id="btn-product-2-printer" href="https://24h.pchome.com.tw/search/?q=%E7%9B%B8%E7%89%87%E5%8D%B0%E8%A1%A8%E6%A9%9F" target="_blank" rel="noopener noreferrer" class="btn-cta mt-6 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-amber-500 to-orange-500 px-5 py-3 text-sm font-semibold text-white" data-event="click_product" data-product="相片印表機">前往 PCHOME 看相片印表機</a>
             </div>
           </article>
 
@@ -311,7 +320,8 @@
                 <li>✔ 拍照好看</li>
                 <li>✔ 提升生活品質</li>
               </ul>
-              <a href="https://giftshop-tw.line.me/category/delivery/2024650/subcategory?categoryId=10025015" target="_blank" rel="noopener noreferrer" class="btn-cta mt-6 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-stone-700 to-stone-600 px-5 py-3 text-sm font-semibold text-white" data-event="click_product" data-product="香氛禮盒">前往 LINE 禮物挑香氛</a>
+              <!-- 加入了 id="btn-product-3-fragrance" -->
+              <a id="btn-product-3-fragrance" href="https://giftshop-tw.line.me/category/delivery/2024650/subcategory?categoryId=10025015" target="_blank" rel="noopener noreferrer" class="btn-cta mt-6 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-stone-700 to-stone-600 px-5 py-3 text-sm font-semibold text-white" data-event="click_product" data-product="香氛禮盒">前往 LINE 禮物挑香氛</a>
             </div>
           </article>
 
@@ -330,7 +340,8 @@
                 <li>✔ 專屬感強</li>
                 <li>✔ 適合紀念日與生日</li>
               </ul>
-              <a href="https://www.tintint.com/" target="_blank" rel="noopener noreferrer" class="btn-cta mt-6 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-rose-700 to-rose-600 px-5 py-3 text-sm font-semibold text-white" data-event="click_product" data-product="客製相簿">前往點點印客製相簿</a>
+              <!-- 加入了 id="btn-product-4-album" -->
+              <a id="btn-product-4-album" href="https://www.tintint.com/" target="_blank" rel="noopener noreferrer" class="btn-cta mt-6 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-rose-700 to-rose-600 px-5 py-3 text-sm font-semibold text-white" data-event="click_product" data-product="客製相簿">前往點點印客製相簿</a>
             </div>
           </article>
 
@@ -349,7 +360,8 @@
                 <li>✔ 實用性高</li>
                 <li>✔ 不容易閒置</li>
               </ul>
-              <a href="https://www.momoshop.com.tw/search/%E7%84%A1%E7%B7%9A%E8%80%B3%E6%A9%9F?_isFuzzy=0&searchType=1" target="_blank" rel="noopener noreferrer" class="btn-cta mt-6 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-stone-800 to-stone-700 px-5 py-3 text-sm font-semibold text-white" data-event="click_product" data-product="無線耳機">前往 MOMO 挑選無線耳機</a>
+              <!-- 加入了 id="btn-product-5-earbuds" -->
+              <a id="btn-product-5-earbuds" href="https://www.momoshop.com.tw/search/%E7%84%A1%E7%B7%9A%E8%80%B3%E6%A9%9F?_isFuzzy=0&searchType=1" target="_blank" rel="noopener noreferrer" class="btn-cta mt-6 inline-flex w-full justify-center rounded-full bg-gradient-to-r from-stone-800 to-stone-700 px-5 py-3 text-sm font-semibold text-white" data-event="click_product" data-product="無線耳機">前往 MOMO 挑選無線耳機</a>
             </div>
           </article>
         </div>
@@ -370,8 +382,10 @@
             <div class="rounded-[1.25rem] border border-white/10 bg-white/10 p-4">偏實用派 → 無線耳機</div>
           </div>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="#top" class="btn-cta inline-flex justify-center rounded-full bg-amber-500 px-6 py-3 text-sm font-semibold text-stone-900 transition">重新回顧 TOP5 推薦</a>
-            <a href="#products" class="inline-flex justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">直接查看熱門商品</a>
+            <!-- 加入了 id="btn-summary-review" 與 data 屬性 -->
+            <a id="btn-summary-review" href="#top" class="btn-cta inline-flex justify-center rounded-full bg-amber-500 px-6 py-3 text-sm font-semibold text-stone-900 transition" data-event="click_product" data-product="頁尾_重新回顧">重新回顧 TOP5 推薦</a>
+            <!-- 加入了 id="btn-summary-products" 與 data 屬性 -->
+            <a id="btn-summary-products" href="#products" class="inline-flex justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10" data-event="click_product" data-product="頁尾_直接查看">直接查看熱門商品</a>
           </div>
         </div>
       </section>
@@ -413,7 +427,7 @@
         });
       });
 
-      // GTM dataLayer 推送方式
+      // GTM dataLayer 推送方式 (透過 data-event 抓取)
       document.querySelectorAll('[data-event="click_product"]').forEach((button) => {
         button.addEventListener('click', () => {
           const productName = button.getAttribute('data-product') || 'unknown';
